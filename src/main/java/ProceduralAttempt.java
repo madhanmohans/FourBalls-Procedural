@@ -7,7 +7,7 @@ public class ProceduralAttempt extends PApplet {
     private float thirdBall = speed;
     private float forthBall = speed;
 
-    private final int height = 12, width = 10;
+    private final int height = 720, width = 720;
 
     @Override
     public void settings() {
@@ -22,7 +22,8 @@ public class ProceduralAttempt extends PApplet {
 
     @Override
     public void draw() {
-        ellipse(firstBall, (float)height / 5, 100, 100);
+        ellipse(firstBall, (float)height / 5, 10, 10);
+        firstBall += speed;
     }
 
     public static void main(String[] args) {
